@@ -16,13 +16,14 @@ class DataBaseConnectionByName
             switch ($name) {
                
                 case "contabilidade":
-                    $this->connection= new PDO('mysql:host=localhost;dbname=contabilidade', 'root','');
+                    $this->connection= 
+                    new PDO('mysql:host=localhost;dbname=contabilidade', 'root','');
                 break;
                 case "santidade":
-                   $this->connection=new PDO('mysql:host=localhost;dbname=santidade', 'root','');
+                   $this->connection=
+                   new PDO('mysql:host=localhost;dbname=santidade', 'root','');
                 break;
-                default:
-                
+                default:                
                    $this->connection=new PDO($name);
             }
         }catch(Exception $e){

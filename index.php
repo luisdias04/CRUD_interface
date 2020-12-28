@@ -9,8 +9,7 @@
 <pre>
 <?php
 require_once("autoload.php");
-$a=new GetAllStructureOfConnectedDataBase($contabilidade);
-
+$a=new GetAllStructureOfConnectedDataBase("contabilidade");
 
 print_r($a);
     
