@@ -8,10 +8,14 @@
 <body>
 <pre>
 <?php
-require_once("autoload.php");
-$a=new GetAllStructureOfConnectedDataBase("contabilidade");
 
-print_r($a);
+require __DIR__ . "/vendor/autoload.php";
+
+use Src\GetAllStructureOfConnectedDataBase;
+
+$resultQuery = new GetAllStructureOfConnectedDataBase("contabilidade");
+
+print_r($resultQuery);
     
 ?>
 </pre>

@@ -1,4 +1,6 @@
 <?php
+namespace Src\DataBaseConnectionByName;
+
 class DataBaseConnectionByName
 {    
     private $connection; 
