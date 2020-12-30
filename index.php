@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Access to database</title>
 </head>
 <body>
 <pre>
 <?php
-require_once("autoload.php");
-$a=new GetAllStructureOfConnectedDataBase("contabilidade");
 
-print_r($a);
+require __DIR__ . "/vendor/autoload.php";
+
+use Src\GetAllStructureOfConnectedDataBase;
+
+$resultQuery = new GetAllStructureOfConnectedDataBase("contabilidade");
+
+print_r($resultQuery);
     
 ?>
 </pre>

@@ -1,4 +1,9 @@
 <?php
+namespace Src;
+
+use PDO;
+use Exception;
+
 class DataBaseConnectionByName
 {    
     private $connection; 
@@ -17,11 +22,11 @@ class DataBaseConnectionByName
                
                 case "contabilidade":
                     $this->connection= 
-                    new PDO('mysql:host=localhost;dbname=contabilidade', 'root','');
+                    new PDO('mysql:dbname=teste2; host=127.0.0.1; port=33066', 'root','y0k0');
                 break;
                 case "santidade":
                    $this->connection=
-                   new PDO('mysql:host=localhost;dbname=santidade', 'root','');
+                   new PDO('mysql:dbname=teste2; host=127.0.0.1; port=33066', 'root','y0k0');
                 break;
                 default:                
                    $this->connection=new PDO($name);
@@ -31,5 +36,3 @@ class DataBaseConnectionByName
         }
     }
 }
-
-?>

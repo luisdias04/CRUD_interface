@@ -1,4 +1,8 @@
 <?php
+
+namespace Src;
+
+use Src\DataBaseConnectionByName;
 class GetAllStructureOfConnectedDataBase extends DataBaseConnectionByName
 {    
     private $dataBaseStructure;
@@ -8,7 +12,7 @@ class GetAllStructureOfConnectedDataBase extends DataBaseConnectionByName
     }    
     
     public function setDataBaseStructure($dataBaseNameToConnect){        
-        $pdo=new DataBaseConnectionByName($dataBaseNameToConnect);        
+        $pdo = new DataBaseConnectionByName($dataBaseNameToConnect);        
         $connection=$pdo->getConnection();
         $getAllTableStructureBythisQuery=
         "SELECT * FROM information_schema.tables WHERE table_schema = '$dataBaseNameToConnect';";
@@ -31,4 +35,3 @@ class GetAllStructureOfConnectedDataBase extends DataBaseConnectionByName
     return $this->dataBaseStructure;
     }
 }
-?>
