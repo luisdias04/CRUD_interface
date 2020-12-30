@@ -35,4 +35,3 @@ class GetAllStructureOfConnectedDataBase extends DataBaseConnectionByName
     return $this->dataBaseStructure;
     }
 }
-?>
