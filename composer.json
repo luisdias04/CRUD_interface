@@ -1,0 +1,15 @@
+{
+    "name": "silvio.azevedo/crud_interface",
+    "authors": [
+        {
+            "name": "silvio.azevedo",
+            "email": "silvio.azevedo@ebserh.gov.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Class\\": "class/"
+        }
+    },
+    "require": {}
+}
