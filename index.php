@@ -8,11 +8,18 @@
 <body>
 <pre>
 <?php
-require_once("autoload.php");
-$a=new GetAllStructureOfConnectedDataBase("contabilidade");
 
+//require __dir__."/vendor/autoload.php"; 
+//->não esta funcionando preciso instalar ainda
+
+require_once("autoload.php");
+
+/*coloque a senha do Banco como ecrever uma frase
+Exemplo:"localhost nomeBanco usuario Senha"
+ou deixe no sweet e ele carrega automaticamente digitando somente uma palavra
+*/
+$a= new Connect('localhost contabilidade root');
 print_r($a);
-    
 ?>
 </pre>
 </body>
