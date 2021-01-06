@@ -1,4 +1,7 @@
 <?php
+
+namespace App;
+
 class PDOtable extends PDOconnect
 {    
     private $table;    

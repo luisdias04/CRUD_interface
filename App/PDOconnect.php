@@ -1,6 +1,10 @@
 <?php
 
-class PDOconnect extends DataBaseLogin
+namespace App;
+
+use PDO;
+
+class PDOconnect extends PDOLogin
 {
     private $pdo;
         

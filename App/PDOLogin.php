@@ -1,6 +1,8 @@
 <?php
 
-class DataBaseLogin extends DataBasePasswordMemory
+namespace App;
+
+class PDOLogin extends PDOPasswordMemory
 {
     public function DadaBaseLogin($value){        
         switch ($value) {                

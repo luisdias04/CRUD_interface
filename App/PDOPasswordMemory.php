@@ -1,6 +1,8 @@
 <?php
 
-class DataBasePasswordMemory
+namespace App;
+
+class PDOPasswordMemory
 {
     private $dataBasePassword=array();
 

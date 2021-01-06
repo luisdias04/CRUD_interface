@@ -1,0 +1,7 @@
+composer dump-autoload
+php -S localhost:8080
+guit composer
+composer init
+git push
+git commit -m "add something function"
+git status

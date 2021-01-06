@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class PDOcolumn extends PDOtable
 {
     private $column;
